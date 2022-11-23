@@ -21,7 +21,7 @@
 <body>
 
     <header class="hero">
-        <nav class="nav container">
+        <nav class="nav container" id="inicio">
             <div class="nav__logo">
                 <h2 class="nav__title">Agregar nuevo logo</h2>
             </div>
@@ -29,19 +29,19 @@
             <ul class="nav__link nav__link--menu">
                 
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Informacion</a>
+                    <a href="#informacion" class="nav__links">Información</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Servicios</a>
+                    <a href="#servicios" class="nav__links">Servicios</a>
                 </li>
                 <li class="nav__items">
                     <a href="#" class="nav__links">Cotiza</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Galeria</a>
+                    <a href="#galeria" class="nav__links">Galeria</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Contacto</a>
+                    <a href="#contacto" class="nav__links">Contacto</a>
                 </li>
 
                 <img src="./images/close.svg" class="nav__close">
@@ -55,15 +55,15 @@
         <section class="hero__container container">
             <h1 class="hero__title">Vidrieria</h1>
             <p class="hero__paragraph">Frase que desmuestre compromiso</p>
-            <a href="https://api.whatsapp.com/send?phone=56994126260&text=Contactanos" class="cta">Contactanos por WhatsApp</a>
+            <a href="https://api.whatsapp.com/send?phone=56945673998&text=Hola!%2C+tengo+una+consultar+acerca+de+sus+servicios." class="cta">Contactanos por WhatsApp</a>
             
         </section>
     </header>
 
     <main>
-
+        
         <section class="questions container">
-            <h2 class="subtitle">Cosas que debes saber</h2>
+            <h2 class="subtitle" id="informacion">Cosas que debes saber</h2>
             <p class="questions__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, porro
                 doloribus neque perspiciatis sapiente fuga.</p>
 
@@ -119,10 +119,11 @@
                     </div>
                 </article>
 
-                </section>
+        </section>
 
 
-        <section class="galeria">
+
+        <section class="galeria" id="galeria">
             <div class="galeria__container container">
                 <img src="./images/leftarrow.svg" class="galeria__arrow" id="before">
 
@@ -164,7 +165,7 @@
                             <img src="./images/galeria6.jpg" class="galeria__img">
                         </figure>
                     </div>
-                </section>
+        </section>
 
 
 
@@ -176,7 +177,7 @@
         </section>
         
         <section class="container about">
-            <h2 class="subtitle">Que productos ofrecemos</h2>
+            <h2 class="subtitle" id="servicios">Que productos ofrecemos</h2>
             <p class="about__paragraph">todos los servicios que estamos ofreciendo con dedicacion...</p>
 
             <div class="about__main">
@@ -233,23 +234,23 @@
     <footer class="footer">
         <section class="footer__container container">
             <nav class="nav nav--footer">
-                <h2 class="footer__title">VentanasDJ</h2>
+                <h2 class="footer__title" id="contacto">VentanasDJ</h2>
 
                 <ul class="nav__link nav__link--footer">
                     <li class="nav__items">
-                        <a href="#" class="nav__links">Inicio</a>
+                        <a href="#inicio" class="nav__links">Inicio</a>
                     </li>
                     <li class="nav__items">
-                        <a href="#" class="nav__links">Información</a>
+                        <a href="#informacion" class="nav__links">Información</a>
                     </li>
                     <li class="nav__items">
-                        <a href="#" class="nav__links">Servicios</a>
+                        <a href="#servicios" class="nav__links">Servicios</a>
                     </li>
                     <li class="nav__items">
                         <a href="#" class="nav__links">Cotiza</a>
                     </li>
                     <li class="nav__items">
-                        <a href="#" class="nav__links">Galeria</a>
+                        <a href="#galeria" class="nav__links">Galeria</a>
                     </li>
                 </ul>
             </nav>
