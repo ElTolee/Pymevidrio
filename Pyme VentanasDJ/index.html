@@ -2,6 +2,8 @@
 <html lang="es">
 
 <head>
+    
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +15,13 @@
     <meta name="theme-color" content="#2091F9">
 
     <meta name="title" content="VidriosDJ">
+    
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/5c3da98805.js" crossorigin="anonymous"></script>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 
        
     
@@ -23,7 +32,7 @@
     <header class="hero">
         <nav class="nav container" id="inicio">
             <div class="nav__logo">
-                <h2 class="nav__title">Agregar nuevo logo</h2>
+                <h2 class="nav__title">LOGO NUEVO </h2>
             </div>
 
             <ul class="nav__link nav__link--menu">
@@ -33,9 +42,6 @@
                 </li>
                 <li class="nav__items">
                     <a href="#servicios" class="nav__links">Servicios</a>
-                </li>
-                <li class="nav__items">
-                    <a href="#" class="nav__links">Cotiza</a>
                 </li>
                 <li class="nav__items">
                     <a href="#galeria" class="nav__links">Galeria</a>
@@ -62,67 +68,42 @@
 
     <main>
         
-        <section class="questions container">
-            <h2 class="subtitle" id="informacion">Cosas que debes saber</h2>
-            <p class="questions__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, porro
-                doloribus neque perspiciatis sapiente fuga.</p>
+        
 
-            <section class="questions__container">
-                <article class="questions__padding">
-                    <div class="questions__answer">
-                        <h3 class="questions__title">¿Quienes somos?
-                            <span class="questions__arrow">
-                                <img src="./images/arrow.svg" class="questions__img">
-                            </span>
-                        </h3>
 
-                        <p class="questions__show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
-                            facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates
-                            eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
-                            amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo
-                            nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis
-                            quam atque?</p>
-                    </div>
+        <section class="container about">
+            <h2 class="subtitle" id="servicios">Que productos ofrecemos</h2>
+            <p class="about__paragraph">todos los servicios que estamos ofreciendo con dedicacion...</p>
+
+            <div class="about__main">
+                <article class="about__icons">
+                    <img src="./images/ventana.svg" class="about__icon">
+                    <h3 class="about__title">Ventanas</h3>
+                    <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
+                        porro eius facilis?</p>
                 </article>
 
-                <article class="questions__padding">
-                    <div class="questions__answer">
-                        <h3 class="questions__title">¿Como lo hacemos?
-                            <span class="questions__arrow">
-                                <img src="./images/arrow.svg" class="questions__img">
-                            </span>
-                        </h3>
-
-                        <p class="questions__show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
-                            facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates
-                            eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
-                            amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo
-                            nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis
-                            quam atque?</p>
-                    </div>
+                <article class="about__icons">
+                    <img src="./images/puerta.svg" class="about__icon">
+                    <h3 class="about__title">Puertas</h3>
+                    <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
+                        porro eius facilis?</p>
+                </article>
+                <article class="about__icons">
+                    <img src="./images/cerramiento.svg" class="about__icon">
+                    <h3 class="about__title">Cerramiento</h3>
+                    <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
+                        porro eius facilis?</p>
                 </article>
 
-                <article class="questions__padding">
-                    <div class="questions__answer">
-                        <h3 class="questions__title">¿Cuantos demoramos?
-                            <span class="questions__arrow">
-                                <img src="./images/arrow.svg" class="questions__img">
-                            </span>
-                        </h3>
-
-                        <p class="questions__show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
-                            facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates
-                            eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
-                            amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo
-                            nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis
-                            quam atque?</p>
-                    </div>
+                <article class="about__icons">
+                    <img src="./images/instalacion.svg" class="about__icon">
+                    <h3 class="about__title">Instalacion</h3>
+                    <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
+                        porro eius facilis?</p>
                 </article>
-
+            </div>
         </section>
-
-
-
         <section class="galeria" id="galeria">
             <div class="galeria__container container">
                 <img src="./images/leftarrow.svg" class="galeria__arrow" id="before">
@@ -165,43 +146,75 @@
                             <img src="./images/galeria6.jpg" class="galeria__img">
                         </figure>
                     </div>
-        </section>
+                </section>
 
 
 
                 <img src="./images/rightarrow.svg" class="galeria__arrow" id="next">
                 
             </div>
-            <a href="galeria.html" class="cta"> Más Fotos</a>
-           
+                <div class="plus">
+            
+                <a href="galeria.html" class="cta"> Más Fotos</a>
+                </div>
         </section>
         
-        <section class="container about">
-            <h2 class="subtitle" id="servicios">Que productos ofrecemos</h2>
-            <p class="about__paragraph">todos los servicios que estamos ofreciendo con dedicacion...</p>
+        <section class="questions container">
+            <h2 class="subtitle" id="informacion">Cosas que debes saber</h2>
+            <p class="questions__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, porro
+                doloribus neque perspiciatis sapiente fuga.</p>
 
-            <div class="about__main">
-                <article class="about__icons">
-                    <img src="./images/ventana.svg" class="about__icon">
-                    <h3 class="about__title">Ventanas</h3>
-                    <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
-                        porro eius facilis?</p>
+            <section class="questions__container">
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Quienes somos?
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">Somos una empresa dedicada a la elaboración, fabricación e instalación de ventanas y cerramientos,
+                            destacamos por la calidad de nuestros servicios, con mas de 12 años en el mercado,pordemos decir con gran orgullo y 
+                            franqueza que somos parte de el selecto grupo que lidera el mercado en nuestro rubro.
+                        </p>
+                    </div>
                 </article>
 
-                <article class="about__icons">
-                    <img src="./images/puerta.svg" class="about__icon">
-                    <h3 class="about__title">Puertas</h3>
-                    <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
-                        porro eius facilis?</p>
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Como lo hacemos?
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                            facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates
+                            eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
+                            amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo
+                            nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis
+                            quam atque?</p>
+                    </div>
+                </article>
+                
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Cuantos demoramos?
+                            <span class="questions__arrow">
+                                <img src="./images/arrow.svg" class="questions__img">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                            facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates
+                            eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
+                            amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo
+                            nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis
+                            quam atque?</p>
+                    </div>
                 </article>
 
-                <article class="about__icons">
-                    <img src="./images/instalacion.svg" class="about__icon">
-                    <h3 class="about__title">Cerramiento</h3>
-                    <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
-                        porro eius facilis?</p>
-                </article>
-            </div>
         </section>
 
         <section class="knowledge">
@@ -220,9 +233,56 @@
             </div>
         </section>
 
-        <section class="container">
-            <h2 class="subtitle">FeedBack</h2>
-            <img src="./images/star.svg" class="galeria__img">
+        <section class="contact">
+            <h1 class="logo">Envianos tu <span >consulta</span></h1>
+                <div class="contact-wrapper">
+                    <div class="contact-form">
+                        <h3> Contactanos
+                            <form action="">
+                                <p>
+                                    <label for="fullname"> Nombre completo</label>
+                                    <input type="text" name="fullname" id="fullname">
+                                </p>
+                                <p>
+                                    <label for="Email"> Email </label>
+                                    <input type="email" name="Email" id="Email">
+                                </p>
+                                <p>
+                                    <label for="phone">Ingrese numero telefonico:</label>
+                                    <input type="tel" id="phone" name="phone"
+                                         pattern="[0-9]{4}-[0-9]{4}"
+                                        required>
+
+                                </p>
+                                <p>
+                                    <label for="Affair"> Asunto</label>
+                                    <input type="text" name="Affair" id="Affair">
+                                </p>
+                                <p class="block">
+                                    <label> Message</label>
+                                    <textarea name="message" row="3"></textarea>
+                                </p>
+                                <p class="block">
+                                <button type="submit">
+                                    Enviar
+                                </button>
+                                </p>
+                            </form>
+                        </h3>
+                    </div>
+                    <div class="contact-info">
+                        <h4> Nuestra informacion</h4>
+                        <ul>
+                            <li><i class="fa-solid fa-location-dot"></i> Padre Mariano 391, Providencia, Santiago</li>
+                            <li><i class="fa-solid fa-phone"></i> +56 9 4567 3998</li>
+                            <li><i class="fa-solid fa-envelope"></i>Ventas@ventanasdj.cl</li>
+                        </ul>
+                        <p> VentanasDj.com</p>
+                    </div>
+                
+                
+                </div>
+            
         </section>
 
         
@@ -247,7 +307,7 @@
                         <a href="#servicios" class="nav__links">Servicios</a>
                     </li>
                     <li class="nav__items">
-                        <a href="#" class="nav__links">Cotiza</a>
+                        <a href="#" class="nav__links">Contactanos</a>
                     </li>
                     <li class="nav__items">
                         <a href="#galeria" class="nav__links">Galeria</a>
