@@ -16,16 +16,14 @@ body {
 .hero {
     width: 100%;
     height: 100vh;
-    min-height: 600px;
-    max-height: 800px;
-    position: relative;
-    display: grid;
-    grid-template-rows: 100px 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #fff;
 }
 .hero::before {
     content: "";
-    position: absolute;
+    
     top: 0;
     left: 0;
     width: 100%;
@@ -34,13 +32,29 @@ body {
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
     z-index: -1;
+    position: absolute;
 }
 /* Nav */
 .nav {
     --padding-container: 0;
+    height: auto;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 0 50px 0 50px;
+    color:#FFF;
+    transition: .5s all ease;
+
+}
+/* Nav */
+.nav2 {
+    --padding-container: 0;
     height: 100%;
     display: flex;
     align-items: center;
+    
+    
 }
 .nav__title {
     font-weight: 300;
@@ -56,10 +70,8 @@ body {
 .nav__items {
     list-style: none;
 }
-.nav__links {
-    color: #fff;
-    text-decoration: none;
-}
+
+
 .nav__menu {
     margin-left: auto;
     cursor: pointer;
@@ -71,6 +83,44 @@ body {
 }
 .nav__close {
     display: var(--show, none);
+}
+
+.nav__activo{
+    background-color: #e5e5f7;
+    color:#000;
+    height: auto;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0 50px 0 50px;
+    transition: .5s all ease;
+}
+
+.nav a{
+    color:#FFF;
+    text-decoration: none;
+    transition: .5s all ease;
+}
+
+.nav__activo a{
+    color:#000;
+    text-decoration: none;
+    transition: .5s all ease;
+}
+
+.nav img{
+    width: 200px;
+    height: auto;
+    transition: .5s all ease;
+}
+
+
+.nav__activo img{
+    width: 100px;
+    height: auto;
+    transition: .5s all ease;
 }
 /* Hero container */
 .hero__container {
