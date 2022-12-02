@@ -238,35 +238,54 @@
                 <div class="contact-wrapper">
                     <div class="contact-form">
                         <h3> Contactanos
-                            <form action="">
-                                <p>
-                                    <label for="fullname"> Nombre completo</label>
-                                    <input type="text" name="fullname" id="fullname">
-                                </p>
-                                <p>
-                                    <label for="Email"> Email </label>
-                                    <input type="email" name="Email" id="Email">
-                                </p>
-                                <p>
-                                    <label for="phone">Ingrese numero telefonico:</label>
-                                    <input type="tel" id="phone" name="phone"
-                                         pattern="[0-9]{4}-[0-9]{4}"
-                                        required>
+                            <form action="https://formsubmit.co/dmunozf@utem.cl" method="POST">
+                                    <div class="row">
+                                        <div class="col">
+                                            <p>
+                                                <label for="fullname"> Nombre y Apellido</label>
+                                                <input type="text" name="Nombre Apellido" id="fullname"
+                                                required>
+                                            </p>
+                                        </div>
+                                        <div class="col">
+                                            <p>
+                                                <label for="Email"> Email </label>
+                                                <input type="email" name="Email" id="Email"
+                                                required>
+                                            </p>
+                                        </div>
+                                    </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p>
+                                                        <label for="phone">Numero Telefonico</label>
+                                                        <input type="tel" id="phone" name="Telefono"
+                                                            pattern="[0-9]{5}[0-9]{4}"
+                                                            required>
 
-                                </p>
-                                <p>
-                                    <label for="Affair"> Asunto</label>
-                                    <input type="text" name="Affair" id="Affair">
-                                </p>
-                                <p class="block">
-                                    <label> Message</label>
-                                    <textarea name="message" row="3"></textarea>
-                                </p>
-                                <p class="block">
-                                <button type="submit">
-                                    Enviar
-                                </button>
-                                </p>
+                                                    </p>
+                                                    </div>
+                                                    <div class="col">
+                                                    <p>
+                                                        <label for="Affair"> Asunto</label>
+                                                        <input type="text" name="Asunto" id="Affair"
+                                                        required>
+                                                    </p>
+                                                    </div>
+                                                </div>
+                                            
+                                                <p class="block">
+                                                    <label> Mensage</label>
+                                                    <textarea name="Mensaje" row="3"></textarea>
+                                                </p>
+                                                <p class="block">
+                                                    <button type="submit">
+                                                     Enviar
+                                                     </button>
+                                                </p>
+                                                    <input type="hidden" name="text" value="La direccion de la pagina">
+                                                    <input type="hidden" name="_captcha" value="false">
+                                        
                             </form>
                         </h3>
                     </div>
