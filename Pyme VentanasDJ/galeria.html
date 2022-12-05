@@ -1,23 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VentanasDJ</title>
     <link rel="shortcut icon" href="./images/logoempresa.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/estilos.css">
-
+	<link rel="stylesheet" href="css/estilosgaleria.css">
     <meta name="theme-color" content="#2091F9">
 
     <meta name="title" content="VidriosDJ">
-    <meta name="description"
-        content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google.">
-       
-
-
     
-</head>
+    <script src="https://kit.fontawesome.com/5c3da98805.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 
-<main>
-    hola
-</main>
+       <script>
+        window.onscroll=function(){scrollfunction()};
+        function scrollfunction(){
+            if(window.scrollY>20){
+                document.getElementById("inicio").classList.remove("nav");
+                document.getElementById("inicio").classList.add("nav__activo");
+            }
+            else{
+                document.getElementById("inicio").classList.remove("nav__activo");
+                document.getElementById("inicio").classList.add("nav");
+            }
+        }
+       </script>
+</head>
+<nav class="nav" id="inicio">
+    <div class="nav__logo">
+        <img src="./images/logoempresa.png"/>
+    </div>
+
+    <ul class="nav__link nav__link--menu">
+        
+        <li class="nav__items">
+            <a href="/index.html#informacion" class="nav__links">Información</a>
+        </li>
+        <li class="nav__items">
+            <a href="/index.html#servicios" class="nav__links">Servicios</a>
+        </li>
+        <li class="nav__items">
+            <a href="#" class="nav__links">Galería</a>
+        </li>
+        <li class="nav__items">
+            <a href="#contacto" class="nav__links">Consulta</a>
+        </li>
+
+        <img src="./images/close.svg" class="nav__close">
+    </ul>
+
+    <div class="nav__menu">
+        <img src="./images/menu.svg" class="nav__img">
+    </div>
+</nav>
+<body>
+	<div class="contenedorgaleria">
+		<div class="menu">
+			<ul>
+				<li class="todos active"><a href="#" class="btn-menu" data-filter="todos">Todos</a></li>
+				<li class="ventanales"><a href="#" class="btn-menu" data-filter="ventanales">Ventanales</a></li>
+                <li class="ventanas"><a href="#" class="btn-menu" data-filter="ventanas">Ventanas</a></li>
+                <li class="puertas"><a href="#" class="btn-menu" data-filter="puertas">Puertas</a></li>
+                <li class="instalaciones"><a href="#" class="btn-menu" data-filter="instalaciones">Instalaciones</a></li>	
+			</ul>
+		</div>
+
+		<div class="galery">
+			<div class="title-img"></div>
+            <div class = "column">
+            <div class="box-img instalaciones"><img src="images/instalacion1.jpeg" alt=""></div>
+            <div class="box-img instalaciones"><img src="images/instalacion2.jpeg" alt=""></div>
+			<div class="box-img ventanales"><img src="images/ventanal1.jpeg" alt=""></div>
+			<div class="box-img ventanales"><img src="images/ventanal2.jpeg" alt=""></div>
+			<div class="box-img ventanales"><img src="images/ventanal3.jpeg" alt=""></div>
+			<div class="box-img ventanales"><img src="images/ventanal4.jpeg" alt=""></div>
+            <div class="box-img ventanas"><img src="images/ventana1.jpeg" alt=""></div>
+            <div class="box-img ventanas"><img src="images/ventana2.jpeg" alt=""></div>
+            <div class="box-img ventanas"><img src="images/ventana3.jpeg" alt=""></div>
+            <div class="box-img puertas"><img src="images/puerta5.jpeg" alt=""></div>
+            <div class="box-img puertas"><img src="images/puerta6.jpeg" alt=""></div>
+            <div class="box-img puertas"><img src="images/puerta4.jpeg" alt=""></div>
+
+        </div>
+        <div class = "column">
+            <div class="box-img ventanas"><img src="images/ventana4.jpeg" alt=""></div>
+            <div class="box-img ventanas"><img src="images/ventana11.jpeg" alt=""></div>
+            <div class="box-img ventanas"><img src="images/ventana12.jpeg" alt=""></div>
+            <div class="box-img instalaciones"><img src="images/instalacion3.jpeg" alt=""></div>
+            <div class="box-img instalaciones"><img src="images/instalacion6.jpeg" alt=""></div>
+            <div class="box-img instalaciones"><img src="images/instalacion7.jpeg" alt=""></div>
+            <div class="box-img puertas"><img src="images/puerta1.jpeg" alt=""></div>
+            <div class="box-img puertas"><img src="images/puerta2.jpeg" alt=""></div>
+            <div class="box-img puertas"><img src="images/puerta3.jpeg" alt=""></div>
+            <div class="box-img ventanales"><img src="images/ventanal5.jpeg" alt=""></div>
+            <div class="box-img ventanales"><img src="images/ventanal6.jpeg" alt=""></div>
+            <div class="box-img ventanales"><img src="images/ventanal7.jpeg" alt=""></div>
+            <div class="box-img ventanales"><img src="images/ventanal8.jpeg" alt=""></div>
+            <div class="box-img puertas"><img src="images/puerta11.jpeg" alt=""></div>
+            <div class="box-img instalaciones"><img src="images/instalacion8.jpeg" alt=""></div>
+
+        </div>
+        <div class = "column">
+            <div class="box-img ventanas"><img src="images/ventana5.jpeg" alt=""></div>
+            <div class="box-img ventanas"><img src="images/ventana6.jpeg" alt=""></div>
+            <div class="box-img ventanas"><img src="images/ventana7.jpeg" alt=""></div>
+            <div class="box-img ventanas"><img src="images/ventana8.jpeg" alt=""></div>
+            <div class="box-img ventanas"><img src="images/ventana9.jpeg" alt=""></div>
+            <div class="box-img ventanas"><img src="images/ventana10.jpeg" alt=""></div>
+            <div class="box-img ventanales"><img src="images/ventanal9.jpeg" alt=""></div>
+			<div class="box-img ventanales"><img src="images/ventanal10.jpeg" alt=""></div>
+            <div class="box-img puertas"><img src="images/puerta7.jpeg" alt=""></div>
+            <div class="box-img puertas"><img src="images/puerta8.jpeg" alt=""></div>
+            <div class="box-img puertas"><img src="images/puerta9.jpeg" alt=""></div>
+            <div class="box-img instalaciones"><img src="images/instalacion4.jpeg" alt=""></div>
+            <div class="box-img instalaciones"><img src="images/instalacion5.jpeg" alt=""></div>
+            <div class="box-img puertas"><img src="images/puerta10.jpeg" alt=""></div>
+        </div>
+
+		</div>
+	</div>
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav2 nav--footer">
+                <h2 class="footer__title" id="contacto">VentanasPVCDJ</h2>
+
+                <ul class="nav__link nav__link--footer">
+                  
+                    <li class="nav__items">
+                        <a href="/index.html#informacion" class="nav__links">Información</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="/index.html#servicios" class="nav__links">Servicios</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#contacto" class="nav__links">Contáctanos</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Galería</a>
+                    </li>
+                </ul>
+                <p>© Copyright Ventanas DJ. Todos los derechos reservados</p>
+            </nav>
+
+        
+
+        </section>
+    </footer>
+	
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/filtro.js"></script>
+
+</body>
+</html>
