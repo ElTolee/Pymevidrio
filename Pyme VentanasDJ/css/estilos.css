@@ -38,7 +38,7 @@ body {
     position: absolute;
 }
 /* Nav */
-/* .nav {
+ .nav {
     --padding-container: 0;
     height: auto;
     display: flex;
@@ -46,11 +46,12 @@ body {
     position: fixed;
     width: 100%;
     padding: 0 50px 0 50px;
-    color:#FFF;
+    background-color: rgba(229, 229, 247, 0.6);
     transition: .5s all ease;
+    color:#000;
 
 
-} */
+} 
 
 
 /* Nav */
@@ -92,7 +93,7 @@ body {
 }
 
 .nav__activo{
-    background-color: #e5e5f7;
+    background-color: rgba(229, 229, 247, 1);
     color:#000;
     height: auto;
     display: flex;
@@ -105,7 +106,7 @@ body {
 }
 
 .nav a{
-    color:#FFF;
+    color:#000;
     text-decoration: none;
     transition: .5s all ease;
 }
@@ -133,6 +134,38 @@ body {
     height: auto;
     transition: .5s all ease;
 }
+
+@media screen and (max-width:768px){
+    .nav img{
+        width: 130px;
+        height: auto;
+        transition: .5s all ease;
+    }
+
+    .contact-wrapper >*{
+        padding: 1em;
+        background: #e5e5f7;
+        -webkit-box-shadow: 21px 20px 6px -15px rgba(117,117,117,1);
+       -moz-box-shadow: 21px 20px 6px -15px rgba(117,117,117,1);
+       box-shadow: 21px 20px 6px -15px rgba(117,117,117,1);
+       padding-top: 50px;
+       display:flex;
+       flex-wrap: wrap;
+       width: 100%;
+       flex-direction: column;
+       
+      }
+
+      .contact-form{
+        width: 100%;
+      }
+
+      .contact-info{
+        width: 100%;
+      }
+
+}
+
 /* Hero container */
 .hero__container {
     max-width: 800px;
@@ -608,6 +641,8 @@ body {
     -moz-box-shadow: 21px 20px 6px -15px rgba(117,117,117,1);
     box-shadow: 21px 20px 6px -15px rgba(117,117,117,1);
     padding-top: 50px;
+    display:flex;
+    flex-wrap: wrap;
     
 
 
