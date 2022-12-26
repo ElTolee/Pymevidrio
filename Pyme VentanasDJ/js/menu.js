@@ -2,7 +2,8 @@
     const openButton = document.querySelector('.nav__menu');
     const menu = document.querySelector('.nav__link');
     const closeMenu = document.querySelector('.nav__close');
-
+    const closeAndMove = document.querySelectorAll('.nav__links');
+    
     openButton.addEventListener('click', ()=>{
         menu.classList.add('nav__link--show');
     });
@@ -11,7 +12,10 @@
         menu.classList.remove('nav__link--show');
     });
 
-    
-
+    closeAndMove.forEach((a) => {
+        a.addEventListener('click', ()=>{
+            menu.classList.remove('nav__link--show');
+        });
+    });
 
 })();
